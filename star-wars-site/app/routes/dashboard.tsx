@@ -11,7 +11,11 @@ export function meta({ }: Route.MetaArgs) {
 export default function Dashboard() {
   return (
     <div>
-      Home page.
+      <nav className="grid grid-cols-1 place-items-center gap-y-6">
+        <Link to="films">Films</Link>
+        <Link to="people">People</Link>
+        <Link to="">Link here</Link>
+      </nav>
     </div>
   )
 }

@@ -5,6 +5,9 @@ export default [
         index("routes/dashboard.tsx"),
         route("films", "routes/films/films.tsx"),
         route("people", "routes/people/people.tsx"),
-        route("films/:filmId", "routes/films/filmDetails.tsx")
+        route("films/:filmId", "routes/films/filmDetails.tsx"),
+        route("people/:peopleId", "routes/people/peopleDetails.tsx"),
+        route("starships", "routes/starships/starships.tsx"),
+        route("starships/:starshipId", "routes/starships/starshipDetail.tsx")
     ]),
 ] satisfies RouteConfig;

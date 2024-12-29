@@ -8,7 +8,6 @@ export async function clientLoader() {
 
 export default function Films() {
     const data = useLoaderData()
-    console.log(data)
 
     const filmMap = data.results?.map((film: { created: string, title: string, episode_id: number }, index: number) => {
         return (
@@ -22,7 +21,7 @@ export default function Films() {
     })
     return (
         <div className="grid grid-col-1 justify-items-center gap-y-8">
-            <h1 className="text-4xl">Movies:</h1>
+            <h1 className="text-2xl font-bold">Select a movie:</h1>
             {filmMap}
         </div>
     )

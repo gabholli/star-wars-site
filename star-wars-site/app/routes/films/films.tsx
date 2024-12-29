@@ -20,9 +20,11 @@ export default function Films() {
         )
     })
     return (
-        <div className="grid grid-col-1 justify-items-center gap-y-8">
-            <h1 className="text-center text-2xl font-bold">Select a movie:</h1>
-            {filmMap}
-        </div>
+        <div className='flex flex-col gap-y-8'>
+            <h1 className="text-center text-2xl font-bold">Select a film:</h1>
+            <div className='grid grid-cols-1 justify-items-center gap-12'>
+                {filmMap}
+            </div>
+        </div >
     )
 }

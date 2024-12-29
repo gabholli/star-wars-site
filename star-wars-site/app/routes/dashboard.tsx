@@ -16,6 +16,7 @@ export default function Dashboard() {
         <Link to="films">Films</Link>
         <Link to="people">People</Link>
         <Link to="starships">Starships</Link>
+        <Link to="vehicles">Vehicles</Link>
       </nav>
     </div>
   )

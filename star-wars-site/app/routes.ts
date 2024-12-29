@@ -8,6 +8,8 @@ export default [
         route("films/:filmId", "routes/films/filmDetails.tsx"),
         route("people/:peopleId", "routes/people/peopleDetails.tsx"),
         route("starships", "routes/starships/starships.tsx"),
-        route("starships/:starshipId", "routes/starships/starshipDetail.tsx")
+        route("starships/:starshipId", "routes/starships/starshipDetail.tsx"),
+        route("vehicles", "routes/vehicles/vehicles.tsx"),
+        route("vehicles/:vehicleId", "routes/vehicles/vehicleDetail.tsx")
     ]),
 ] satisfies RouteConfig;

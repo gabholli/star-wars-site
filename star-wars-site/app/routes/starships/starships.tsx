@@ -13,7 +13,9 @@ export default function Starships() {
         url: any, name: string,
     }, index: number) => {
         return (
-            <Link to={`/starships/${ship.url.split('/').filter(Boolean).pop()}`}>
+            <Link
+                className="text-xl"
+                to={`/starships/${ship.url.split('/').filter(Boolean).pop()}`}>
                 {ship.name}
             </Link>
         )
@@ -22,7 +24,7 @@ export default function Starships() {
 
     return (
         <div className='grid grid-col-1 justify-items-center gap-y-8'>
-            <h1 className="text-2xl font-bold">Select a character:</h1>
+            <h1 className="text-2xl font-bold">Select a starship:</h1>
             {shipMap}
         </div>
     )

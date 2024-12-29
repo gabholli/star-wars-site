@@ -5,7 +5,7 @@ export default function Layout() {
     return (
         <div className='flex flex-col min-h-svh'>
             <nav className='flex justify-center py-4 border-b-2 border-black'>
-                <div className="text-2xl">
+                <div className="text-xl">
                     <Link to="/">Dashboard</Link>
                 </div>
             </nav>

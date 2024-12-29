@@ -24,7 +24,7 @@ export default function People() {
     })
     return (
         <div className='grid grid-col-1 justify-items-center gap-y-8'>
-            <h1 className="text-2xl font-bold">Select a character:</h1>
+            <h1 className="text-center text-2xl font-bold">Select a character:</h1>
             {peopleMap}
         </div>
     )

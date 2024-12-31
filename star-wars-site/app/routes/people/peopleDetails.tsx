@@ -16,5 +16,5 @@ export default function PeopleDetails() {
         <div>
             <h1>Details for {data.name}:</h1>
         </div>
-    )a
+    )
 }

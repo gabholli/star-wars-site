@@ -1,5 +1,0 @@
-{
-  "devDependencies": {
-    "@netlify/vite-plugin-react-router": "^1.0.0"
-  }
-}

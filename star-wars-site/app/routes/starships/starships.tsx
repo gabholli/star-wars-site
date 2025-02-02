@@ -8,16 +8,18 @@ export async function clientLoader() {
 
 export default function Starships() {
     const data = useLoaderData()
-
+    console.log(data)
     const shipMap = data.results?.map((ship: {
         url: any, name: string,
     }, index: number) => {
         return (
-            <Link
-                className="text-xl"
-                to={`/starships/${ship.url.split('/').filter(Boolean).pop()}`}>
-                {ship.name}
-            </Link>
+            <div key={ship.url}>
+                <Link
+                    className="text-xl"
+                    to={`/starships/${ship.url.split('/').filter(Boolean).pop()}`}>
+                    {ship.name}
+                </Link>
+            </div>
         )
 
     })
